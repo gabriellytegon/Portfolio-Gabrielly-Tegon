@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Actor&family=Archivo+Black&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+.titleProjects {
+  color: #8e49de;
+  font-family: "Archivo Black", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.carousel {
+  max-width: 700px;
+  margin: 32px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.carousel img {
+  height: 400px;
+  object-fit: contain;
+}
+
+.carousel-description {
+  text-align: center;
+  padding-top: 16px;
+}
+
+.buttonProject {
+  background-color: #8e49de;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s;
+  border: none;
+  border: 2px solid transparent;
+}
+
+.buttonProject:hover {
+  background-color: #060606;
+  border: 2px solid #8e49de;
+}
+
+.buttonProject a {
+  color: white;
+  text-decoration: none;
+  font-family: "Archivo Black", sans-serif;
+}

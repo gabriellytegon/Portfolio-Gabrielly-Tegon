@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Actor&family=Archivo+Black&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0px 0px;
+}
+
+.contactSection {
+  background-color: #060606;
+  width: 60%;
+  padding: 48px 32px;
+  border-radius: 300px 300px 0 0;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 15px rgba(128, 0, 255, 0.3);
+}
+
+.titleContactSection {
+  color: #8e49de;
+  font-family: "Archivo Black", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.contactItem {
+  text-decoration: none;
+  color: white;
+  font-family: "Actor", sans-serif;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.contactItem a {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+}
+
+.contactItem img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.contactItem:hover {
+  transform: scale(1.05);
+}
+
+.contactItem:hover img {
+  transform: scale(1.1);
+}

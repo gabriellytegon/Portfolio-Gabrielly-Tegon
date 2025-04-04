@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Actor&family=Archivo+Black&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+.yearCard {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.yearCard .year {
+  color: #8e49de;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 32px;
+}
+
+.text {
+  color: white;
+  text-align: justify;
+  font-family: "Actor", sans-serif;
+}
