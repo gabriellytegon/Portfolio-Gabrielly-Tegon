@@ -12,10 +12,7 @@ export function Contact() {
                 href="https://www.linkedin.com/in/gabrielly-tegon/"
                 target="_blank"
               >
-                <img
-                  src="../../../public/assets/linkedinIcon.svg"
-                  alt="Ícone do LinkedIn"
-                />{" "}
+                <img src="/assets/linkedinIcon.svg" alt="Ícone do LinkedIn" />
                 <span>Gabrielly Tegon</span>
               </a>
             </div>
@@ -24,28 +21,19 @@ export function Contact() {
                 href="https://www.instagram.com/gabytegon.tech/"
                 target="_blank"
               >
-                <img
-                  src="../../../public/assets/instagramIcon.svg"
-                  alt="Ícone do Instagram"
-                />
+                <img src="/assets/instagramIcon.svg" alt="Ícone do Instagram" />
                 <span>@tegongaby.tech</span>
               </a>
             </div>
             <div className="contactItem">
               <a href="https://github.com/settings/profile" target="_blank">
-                <img
-                  src="../../../public/assets/githubIcon.svg"
-                  alt="Ícone do GitHub"
-                />
+                <img src="/assets/githubIcon.svg" alt="Ícone do GitHub" />
                 <span>Gabrielly Tegon</span>
               </a>
             </div>
             <div className="contactItem">
               <a href="mailto:tegongabrielly@gmail.com">
-                <img
-                  src="../../../public/assets/gmailIcon.svg"
-                  alt="Ícone do Gmail"
-                />
+                <img src="/assets/gmailIcon.svg" alt="Ícone do Gmail" />
                 <span>tegongabrielly@gmail.com</span>
               </a>
             </div>

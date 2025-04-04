@@ -17,7 +17,7 @@ export function Home() {
                   href="https://www.linkedin.com/in/gabrielly-tegon/"
                   target="_blank"
                 >
-                  <img src="../../../public/assets/linkedinIcon.svg" alt="" />
+                  <img src="/assets/linkedinIcon.svg" alt="" />
                 </a>
               </li>
               <li>
@@ -25,19 +25,19 @@ export function Home() {
                   href="https://www.instagram.com/gabytegon.tech/"
                   target="_blank"
                 >
-                  <img src="../../../public/assets/instagramIcon.svg" alt="" />
+                  <img src="/assets/instagramIcon.svg" alt="" />
                 </a>
               </li>
               <li>
                 <a href="https://github.com/settings/profile" target="_blank">
-                  <img src="../../../public/assets/githubIcon.svg" alt="" />
+                  <img src="/assets/githubIcon.svg" alt="" />
                 </a>
               </li>
             </ul>
           </div>
         </div>
         <div className="profileImage">
-          <img src="../../../public/images/profile.jpeg" alt="" />
+          <img src="/images/profile.jpeg" alt="" />
         </div>
       </div>
     </>
