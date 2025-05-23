@@ -1,14 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Actor&family=Archivo+Black&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
-
 .contactContainer {
   display: flex;
   justify-content: center;
   padding: 24px 0px 0px;
 }
 
-.contactSection {
+.contactContainer > div {
   background-color: #060606;
-  width: 60%;
+  width: 100%;
+  max-width: 800px;
   padding: 48px 32px;
   border-radius: 300px 300px 0 0;
   display: flex;
@@ -16,13 +15,6 @@
   flex-direction: column;
   align-items: center;
   box-shadow: 0px 0px 15px rgba(128, 0, 255, 0.3);
-}
-
-.titleContactSection {
-  color: #8e49de;
-  font-family: "Archivo Black", sans-serif;
-  text-transform: uppercase;
-  font-size: 18px;
 }
 
 .contacts {
@@ -61,4 +53,25 @@
 
 .contactItem:hover img {
   transform: scale(1.1);
+}
+
+.contactItem span {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .contactContainer > div {
+    padding: 32px 16px;
+  }
+
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .contactItem span {
+    display: none;
+  }
 }

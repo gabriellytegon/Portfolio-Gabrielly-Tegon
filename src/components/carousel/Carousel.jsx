@@ -5,13 +5,6 @@ import "./style.css";
 import { useEffect } from "react";
 
 export function Carousel() {
-  useEffect(() => {
-    const el = document.querySelector("#carouselExampleCaptions");
-    if (el && window.bootstrap) {
-      new window.bootstrap.Carousel(el);
-    }
-  }, []);
-
   const slides = [
     {
       image: "animaisFantasticos.png",
@@ -31,13 +24,34 @@ export function Carousel() {
     },
   ];
 
+  useEffect(() => {
+    const el = document.querySelector("#carouselExampleCaptions");
+    if (el && window.bootstrap) {
+      new window.bootstrap.Carousel(el);
+    }
+  }, []);
+
+  const handleButtonClick = () => {
+    const items = document.querySelectorAll(".carousel-item");
+    const active = Array.from(items).find((item) =>
+      item.classList.contains("active")
+    );
+    const index = Array.from(items).indexOf(active);
+
+    const currentLink = slides[index]?.link;
+    if (currentLink) {
+      window.open(currentLink, "_blank");
+    }
+  };
+
   return (
     <div
       id="carouselExampleCaptions"
       className="carousel slide"
       data-bs-ride="carousel"
     >
-      <h2 className="titleProjects">Projetos</h2>
+      <h2 className="titleSection">Projetos</h2>
+
       <div className="carousel-inner">
         {slides.map((slide, index) => (
           <div
@@ -49,15 +63,14 @@ export function Carousel() {
               className="d-block w-100"
               alt={`Slide ${index + 1}`}
             />
-            <div className="carousel-description">
-              <button className="buttonProject">
-                <a href={slide.link} target="_blank" rel="noopener noreferrer">
-                  Clique para ver o projeto
-                </a>
-              </button>
-            </div>
           </div>
         ))}
+      </div>
+
+      <div className="carousel-description">
+        <button className="buttonProject" onClick={handleButtonClick}>
+          Clique para ver o projeto
+        </button>
       </div>
 
       <button

@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
-
 .home {
   background-color: black;
   display: flex;
@@ -18,7 +16,6 @@
 
 .welcome h1 {
   font-family: "Archivo Black", sans-serif;
-  font-weight: 400;
   color: white;
   font-size: 24px;
 }
@@ -46,4 +43,25 @@
 
 .socialMediaIcon ul li:hover {
   transform: scale(1.25);
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 100px 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .welcome {
+    width: 100%;
+  }
+
+  .profileImage img {
+    width: 200px;
+  }
+
+  .socialMediaIcon ul {
+    padding: 0px;
+  }
 }

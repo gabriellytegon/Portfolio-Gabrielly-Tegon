@@ -1,18 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Actor&family=Archivo+Black&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
-
 .aboutMe {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 32px;
   background-color: #060606;
-  padding: 32px 300px;
+  padding: 32px 0px;
   align-items: center;
 }
 
-.aboutMe h2 {
-  color: #8e49de;
-  font-family: "Archivo Black", sans-serif;
-  text-transform: uppercase;
-  font-size: 18px;
+.yearCard {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .aboutMe {
+    padding: 32px 0px;
+  }
+
+  .yearCard {
+    width: 90%;
+  }
 }

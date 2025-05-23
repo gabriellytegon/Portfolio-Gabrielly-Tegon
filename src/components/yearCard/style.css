@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Actor&family=Archivo+Black&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
-
 .yearCard {
   display: flex;
   gap: 32px;
@@ -16,4 +14,16 @@
   color: white;
   text-align: justify;
   font-family: "Actor", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .yearCard {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+
+  .text {
+    word-break: break-word;
+  }
 }
