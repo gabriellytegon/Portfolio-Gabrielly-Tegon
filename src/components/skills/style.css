@@ -32,4 +32,8 @@
   .skills {
     padding: 0px;
   }
+
+  .skillsSection {
+    background-color: #282828;
+  }
 }
