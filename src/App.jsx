@@ -13,10 +13,11 @@ import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: true,
-    });
+    AOS.init({ duration: 800, once: true });
+
+    setTimeout(() => {
+      AOS.refresh();
+    }, 500);
   }, []);
 
   return (
